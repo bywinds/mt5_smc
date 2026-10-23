@@ -44,9 +44,7 @@
 
 1、本策略源码仅供学习与技术研究使用，不构成任何投资建议，请在法律法规允许的范围内使用本项目；
 <br>
-2、策略源码不是收益承诺，回测和历史表现不代表未来收益，如需在实盘中运行本策略，请慎重考虑；
-<br>
-3、虚拟商品，售出不退；拍前请确认具备MQL5 Python策略运行环境。
+2、策略源码不是收益承诺，回测和历史表现不代表未来收益，如需在实盘中运行本策略，请慎重考虑。
 
 <br>
 <br>
@@ -97,9 +95,7 @@ People with MQL5 basics who want to study SMC smart money logic, need plaintext 
 
 1. This strategy source code is for learning and technical research only and does not constitute any investment advice. Please use this project within the scope permitted by laws and regulations;
 <br>
-2. The strategy source code is not a profit promise. Backtesting and historical performance do not represent future returns. If you need to run this strategy in live trading, please consider carefully;
-<br>
-3. Virtual goods; no returns after sale. Before purchasing, please confirm that you have an MQL5 Python strategy runtime environment.
+2. The strategy source code is not a profit promise. Backtesting and historical performance do not represent future returns. If you need to run this strategy in live trading, please consider carefully.
 
 <br>
 <br>
