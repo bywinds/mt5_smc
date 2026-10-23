@@ -51,10 +51,59 @@
 <br>
 <br>
 
-___如果您对程序有疑问，可以向我询问，谢谢！___
+## Project Introduction
+
+Building an SMC EA is not difficult because of writing a BOS, OB, or FVG function; the real challenge is connecting swing highs/lows, structure breaks, order blocks, gaps, liquidity, previous-period highs/lows, weighted scoring, and order/close/risk control into a closed loop that actually runs.
+
+This source code is an SMC strategy written on the MQL5 EA framework, in plaintext without encryption. It is suitable for studying smart money logic, saving time building modules from scratch, and facilitating secondary development.
+
+<br>
+
+### Core Content
+
+* Complete MQL5 EA framework: OnInit / OnTick, triggered by new bars, CopyRates retrieves 200 completed bars, CTrade places orders, positions managed by magic + symbol;
+
+* Multi-timeframe structure: executed on the current timeframe, H4 aggregates BOS/CHOCH and projects them back to the current timeframe, overlaying H4 previous highs/lows into scoring;
+
+* Complete SMC core modules: swing highs/lows, BOS/CHOCH, order blocks OB, FVG, liquidity sweeps, previous-period highs/lows;
+
+* Weighted scoring: previous highs/lows, aggregated BOS, BOS/CHOCH, OB retest, FVG retest, and liquidity sweep are scored separately; a net score above entryThreshold generates a signal, and the strongThreshold strong-signal score is already reserved;
+
+* Structural stop-loss and take-profit: support/resistance, TP1/TP2 candidates, ATR buffer; fixed-point SL/TP combined with structural levels, with automatic validation of the broker's minimum stop distance;
+
+* Execution risk control: maximum spread filter, margin check, lot size normalized by minimum/maximum/step, closing opposite positions by signal direction before opening, filtering positions by magic;
+
+* Adjustable parameters: lot size, fixed SL/TP points, maximum spread, module weights, thresholds, swing length, liquidity range, etc. are all variables in the source code and can be modified as needed.
+
+<br>
+
+### Usage Notes
+
+* Default single symbol, running on the current chart; example parameters are EURUSD, 1.10 lots, 200-point SL, 400-point TP, maximum spread 50. These are only source-code defaults; before live trading, be sure to adjust according to the symbol, capital, and broker rules;
+
+* Backtest in the strategy tester first, then verify on a demo account/small capital; the SMC strategy general configuration scheme is not completely consistent with the source-code default parameters (e.g., thresholds 0.45/0.70/0.008 vs. source code 0.55/0.75/0.01). The source code prevails and can be unified as needed;
+
+* The source code is for strategy research/secondary development purposes and does not include any profit promise; forex/CFD leverage carries significant risk.
+
+<br>
+
+### Suitable For
+
+People with MQL5 basics who want to study SMC smart money logic, need plaintext EA source code for secondary development, and hope to save time building BOS/OB/FVG/liquidity modules.
+
+<br>
+
+### Risk Statement
+
+1. This strategy source code is for learning and technical research only and does not constitute any investment advice. Please use this project within the scope permitted by laws and regulations;
+<br>
+2. The strategy source code is not a profit promise. Backtesting and historical performance do not represent future returns. If you need to run this strategy in live trading, please consider carefully;
+<br>
+3. Virtual goods; no returns after sale. Before purchasing, please confirm that you have an MQL5 Python strategy runtime environment.
+
+<br>
+<br>
+
+___如果您对程序有疑问，可以向我询问，谢谢！If you have any questions about the program, feel free to ask me. Thank you___
 
 ![加好友](https://private-user-images.githubusercontent.com/19700138/682741720-c01f82c6-f631-4e7f-9d65-1441768d3e6f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI3NjExMzIsIm5iZiI6MTc5Mjc2MDgzMiwicGF0aCI6Ii8xOTcwMDEzOC82ODI3NDE3MjAtYzAxZjgyYzYtZjYzMS00ZTdmLTlkNjUtMTQ0MTc2OGQzZTZmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDIzVDEzMDcxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM3NDc4MGYwNzU5MjJlYzkwZDQ5MmU3ZmY4NTA5OWYxOTY1NGMyYTY4ZjlmYjRiNDA5MzEwNjMyMGIxNTgzYjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.F415_jfcrlDSt6P7MlCl9QLaW1PNFckasEVw1VNZVOk)  
-
-
-
-
