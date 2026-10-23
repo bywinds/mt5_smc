@@ -2,7 +2,7 @@
 
 做SMC EA，难的不是写一个BOS、OB、FVG函数，而是把摆动高低点、结构突破、订单块、缺口、流动性、前周期高低点、加权评分、下单/平仓/风控串成一套能跑的闭环。
 
-这份源码是按MQL5 EA框架编写的SMC策略，明文不加密，适合研究聪明钱逻辑、节省从零搭模块的时间，也方便二次开发。
+这份源码是按MQL5 EA框架编写的SMC策略，适合研究聪明钱逻辑、节省从零搭模块的时间，也方便二次开发。
 
 <br>
 
@@ -36,7 +36,7 @@
 
 ### 适合人群
 
-有MQL5基础，想研究SMC聪明钱逻辑、需要明文EA源码二次开发、希望省去BOS/OB/FVG/流动性模块搭建时间的人。
+有MQL5基础，想研究SMC聪明钱逻辑、需要EA源码二次开发、希望省去BOS/OB/FVG/流动性模块搭建时间的人。
 
 <br>
 
@@ -53,7 +53,7 @@
 
 Building an SMC EA is not difficult because of writing a BOS, OB, or FVG function; the real challenge is connecting swing highs/lows, structure breaks, order blocks, gaps, liquidity, previous-period highs/lows, weighted scoring, and order/close/risk control into a closed loop that actually runs.
 
-This source code is an SMC strategy written on the MQL5 EA framework, in plaintext without encryption. It is suitable for studying smart money logic, saving time building modules from scratch, and facilitating secondary development.
+This source code is an SMC strategy written on the MQL5 EA framework. It is suitable for studying smart money logic, saving time building modules from scratch, and facilitating secondary development.
 
 <br>
 
@@ -87,7 +87,7 @@ This source code is an SMC strategy written on the MQL5 EA framework, in plainte
 
 ### Suitable For
 
-People with MQL5 basics who want to study SMC smart money logic, need plaintext EA source code for secondary development, and hope to save time building BOS/OB/FVG/liquidity modules.
+People with MQL5 basics who want to study SMC smart money logic, need EA source code for secondary development, and hope to save time building BOS/OB/FVG/liquidity modules.
 
 <br>
 
@@ -100,6 +100,6 @@ People with MQL5 basics who want to study SMC smart money logic, need plaintext 
 <br>
 <br>
 
-___如果您对程序有疑问，可以向我询问，谢谢！If you have any questions about the program, feel free to ask me. Thank you___
+___如果您对程序有疑问，可以向我询问，谢谢！If you have any questions about the program, feel free to ask me. Thank you !___
 
 ![加好友](https://private-user-images.githubusercontent.com/19700138/682741720-c01f82c6-f631-4e7f-9d65-1441768d3e6f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI3NjExMzIsIm5iZiI6MTc5Mjc2MDgzMiwicGF0aCI6Ii8xOTcwMDEzOC82ODI3NDE3MjAtYzAxZjgyYzYtZjYzMS00ZTdmLTlkNjUtMTQ0MTc2OGQzZTZmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDIzVDEzMDcxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM3NDc4MGYwNzU5MjJlYzkwZDQ5MmU3ZmY4NTA5OWYxOTY1NGMyYTY4ZjlmYjRiNDA5MzEwNjMyMGIxNTgzYjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.F415_jfcrlDSt6P7MlCl9QLaW1PNFckasEVw1VNZVOk)  
